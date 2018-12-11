@@ -1,12 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>First Page</h1>
-</body>
-</html>
+--- layout: page description: "Boilerplate of Hux Blog" --- {% for post in paginator.posts %}
+{{ post.title }}
+{% if post.subtitle %}
+{{ post.subtitle }}
+{% endif %}
+{{ post.content | strip_html | truncate:200 }}
+Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+
+{% endfor %} {% if paginator.total_pages > 1 %}
+{% if paginator.previous_page %}
+← Newer Posts
+{% endif %} {% if paginator.next_page %}
+Older Posts →
+{% endif %}
+{% endif %}
