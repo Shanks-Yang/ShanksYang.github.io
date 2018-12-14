@@ -1,0 +1,26 @@
+{
+  "name": "slienceb.github.io",
+  "version": "1.0.0",
+  "description": "yangtao blog",
+  "main": "main.0cf68a.js",
+  "dependencies": {
+    "hexo-generator-json-content": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slienceB/slienceB.github.io.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "yangtao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slienceB/slienceB.github.io/issues"
+  },
+  "homepage": "https://github.com/slienceB/slienceB.github.io#readme"
+}
